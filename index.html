@@ -7,28 +7,28 @@
   <meta name="theme-color" content="#0d0f11" />
   <title>Kuzey Mete Kardeş — Projeler ve Notlar</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=locale-2" />
 </head>
-<body>
+<body id="top">
   <a class="skip-link tr" href="#icerik">İçeriğe geç</a>
-  <a class="skip-link en" href="#content">Skip to content</a>
+  <a class="skip-link en" href="#icerik">Skip to content</a>
 
   <header class="site-header">
     <a class="wordmark" href="index.html" aria-label="Kuzey Mete Kardeş"><span>K</span><span>M</span></a>
     <p class="header-note">Kuzey Mete Kardeş</p>
     <nav aria-label="Ana menü / Main menu">
-      <a class="tr" href="#projeler">Projeler</a><a class="en" href="#projects">Projects</a>
+      <a class="tr" href="#projeler">Projeler</a><a class="en" href="#projeler">Projects</a>
       <a href="jarvis.html">JARVIS</a>
-      <a class="tr" href="#yolculuk">Yolculuk</a><a class="en" href="#journey">Journey</a>
+      <a class="tr" href="#yolculuk">Yolculuk</a><a class="en" href="#yolculuk">Journey</a>
     </nav>
     <div class="header-actions">
-      <button class="lang-button" type="button" aria-label="Dili değiştir / Switch language"><span data-lang-choice="tr">TR</span><i>/</i><span data-lang-choice="en">EN</span></button>
+      <div class="language-picker" role="group" aria-label="Dil seçimi"><p><span class="tr">Sayfayı hangi dilde incelemek istersiniz?</span><span class="en">Which language would you like to use?</span></p><div class="language-options"><button type="button" data-locale="en-US" lang="en-US" aria-pressed="false">EN (US)</button><button type="button" data-locale="en-GB" lang="en-GB" aria-pressed="false">EN (UK)</button><button type="button" data-locale="tr" lang="tr" aria-pressed="true">TR</button></div></div>
       <a class="out-link" href="https://github.com/AKKSYkardes">GitHub ↗</a>
     </div>
   </header>
 
   <main id="icerik">
-    <section class="hero" id="top">
+    <section class="hero">
       <p class="eyebrow reveal tr">ÖĞRENCİ GELİŞTİRİCİ · DÜZCE, TÜRKİYE</p>
       <p class="eyebrow reveal en">STUDENT DEVELOPER · DÜZCE, TÜRKİYE</p>
       <div class="hero-grid">
@@ -50,8 +50,8 @@
 
     <section class="statement reveal" aria-label="Hakkımda / About">
       <p class="section-code">[ 01 — <span class="tr">YAKLAŞIM</span><span class="en">APPROACH</span> ]</p>
-      <p class="statement-text tr">Hazır cevaplardan çok, doğru soruyu kurmaya; büyük fikirlerden çok, denenebilir küçük adımlara inanıyorum.</p>
-      <p class="statement-text en">I care more about forming the right question than finding a quick answer, and more about testable steps than oversized ideas.</p>
+      <p class="statement-text tr">Hazır cevaplardan çok, doğru soruyu sormaya; büyük fikirlerden çok, denenebilir küçük adımlara inanıyorum.</p>
+      <p class="statement-text en">I care more about asking the right question than finding a quick answer, and more about testable steps than oversized ideas.</p>
       <div class="statement-note">
         <p class="tr">Düzce Fen Lisesi ve BİLSEM öğrencisi, DENEYAP mezunuyum. Okul takımlarında ve kişisel projelerimde mekanik ile yazılım arasındaki bağı öğreniyorum.</p>
         <p class="en">I study at Düzce Science High School and BİLSEM, and I am a DENEYAP graduate. Through school teams and personal projects, I am learning the connection between mechanics and software.</p>
@@ -66,7 +66,7 @@
 
       <a class="work-row reveal" href="jarvis.html">
         <span class="work-number">001</span>
-        <div><p>PERSONAL AI SYSTEM</p><h3>JARVIS</h3></div>
+        <div><p><span class="tr">KİŞİSEL YAPAY ZEKÂ SİSTEMİ</span><span class="en">PERSONAL AI SYSTEM</span></p><h3>JARVIS</h3></div>
         <p class="work-description tr">Projeleri, kararları ve kaynakları zaman içinde ilişkilendirebilen; kritik eylemlerde insan onayını koruyan kişisel ajan mimarisi.</p>
         <p class="work-description en">A personal agent architecture designed to connect projects, decisions and sources over time while preserving human approval for critical actions.</p>
         <span class="work-state"><i></i><span class="tr">GELİŞİYOR</span><span class="en">IN PROGRESS</span></span><b class="row-arrow">↗</b>
@@ -74,7 +74,7 @@
 
       <a class="work-row reveal" href="iron-man.html">
         <span class="work-number">002</span>
-        <div><p>WEARABLE ROBOTICS</p><h3>Iron Man<br />Kaskı + Kolu</h3></div>
+        <div><p><span class="tr">GİYİLEBİLİR ROBOTİK</span><span class="en">WEARABLE ROBOTICS</span></p><h3>Iron Man<br /><span class="tr">Kaskı + Kolu</span><span class="en">Helmet + Arm</span></h3></div>
         <p class="work-description tr">3D baskı, hareketli mekanizma, elektronik ve mikrodenetleyici yazılımını tek bir giyilebilir prototipte birleştirme planı.</p>
         <p class="work-description en">A plan to combine 3D printing, moving mechanisms, electronics and microcontroller software in one wearable prototype.</p>
         <span class="work-state planned"><i></i><span class="tr">PLANLAMA</span><span class="en">PLANNING</span></span><b class="row-arrow">↗</b>
@@ -82,8 +82,8 @@
 
       <article class="work-row reveal">
         <span class="work-number">003</span>
-        <div><p>TEAM ENGINEERING</p><h3>FRC + Roket</h3></div>
-        <p class="work-description tr">FRC'de mekanik; roket takımında ise karar sürecinde olduğum için hem mekanik hem aviyonik deneme görevleri.</p>
+        <div><p><span class="tr">TAKIM ÇALIŞMASI</span><span class="en">TEAM ENGINEERING</span></p><h3><span class="tr">FRC + Roket</span><span class="en">FRC + Rocket Team</span></h3></div>
+        <p class="work-description tr">FRC takımında mekanik alanında çalışıyorum. Roket takımında alt ekibimi seçmeden önce hem mekanik hem de aviyonik ekibinin deneme görevlerini yapıyorum.</p>
         <p class="work-description en">Mechanical work in FRC; trial tasks in both mechanics and avionics for the rocket team while I decide on a sub-team.</p>
         <span class="work-state"><i></i><span class="tr">ÖĞRENİYORUM</span><span class="en">LEARNING</span></span>
       </article>
@@ -95,10 +95,10 @@
         <h2 class="tr">Önce anlamak, sonra kurmak.</h2><h2 class="en">Understand first, then build.</h2>
       </div>
       <div class="method-grid">
-        <article class="reveal"><span>01</span><h3 class="tr">Problemi sınırla</h3><h3 class="en">Frame the problem</h3><p class="tr">Ne yapacağımı kadar neyi henüz yapmayacağımı da belirlerim.</p><p class="en">I define both what I will build and what I will deliberately leave out.</p></article>
+        <article class="reveal"><span>01</span><h3 class="tr">Problemi sınırla</h3><h3 class="en">Frame the problem</h3><p class="tr">Ne yapacağımı ve hangi işleri sonraya bırakacağımı belirlerim.</p><p class="en">I define both what I will build and what I will deliberately leave out.</p></article>
         <article class="reveal"><span>02</span><h3 class="tr">Mimariyi çiz</h3><h3 class="en">Map the architecture</h3><p class="tr">Bileşenleri, veri akışını ve güven sınırlarını koddan önce görünür kılarım.</p><p class="en">I make components, data flow and trust boundaries visible before code.</p></article>
-        <article class="reveal"><span>03</span><h3 class="tr">Küçük doğrula</h3><h3 class="en">Validate in small steps</h3><p class="tr">Her parçayı tek başına test eder, sonuçtan sonra sıradaki katmana geçerim.</p><p class="en">I test each part independently before moving to the next layer.</p></article>
-        <article class="reveal"><span>04</span><h3 class="tr">Kaydı koru</h3><h3 class="en">Preserve the record</h3><p class="tr">Kararları, kaynakları ve hataları belgelendirerek yeniden üretilebilir tutarım.</p><p class="en">I document decisions, sources and failures so the work stays reproducible.</p></article>
+        <article class="reveal"><span>03</span><h3 class="tr">Küçük adımlarla doğrula</h3><h3 class="en">Validate in small steps</h3><p class="tr">Her parçayı ayrı ayrı test eder, sonuçları değerlendirdikten sonra bir sonraki katmana geçerim.</p><p class="en">I test each part independently before moving to the next layer.</p></article>
+        <article class="reveal"><span>04</span><h3 class="tr">Kaydı koru</h3><h3 class="en">Preserve the record</h3><p class="tr">Çalışmaların yeniden üretilebilmesi için kararları, kaynakları ve hataları belgelendiririm.</p><p class="en">I document decisions, sources and failures so the work stays reproducible.</p></article>
       </div>
     </section>
 
@@ -108,9 +108,9 @@
         <h2 class="tr">Farklı disiplinler, aynı merak.</h2><h2 class="en">Different disciplines, one curiosity.</h2>
       </div>
       <div class="timeline">
-        <article class="reveal"><span>BUGÜN / NOW</span><div><p class="tr">ÖRGÜN EĞİTİM</p><p class="en">FORMAL EDUCATION</p><h3>Düzce Fen Lisesi</h3></div><p class="tr">Fen bilimleri eğitimi; FRC mekanik ve okul roket takımı çalışmaları.</p><p class="en">Science education, FRC mechanical work and the school rocket team.</p></article>
-        <article class="reveal"><span>DEVAM / ONGOING</span><div><p>BİLSEM</p><h3>Robotik 2 · Yazılım 2<br />3D Tasarım · Biyoloji</h3></div><p class="tr">Teknik üretimi tasarım ve bilimsel düşünmeyle birlikte geliştirdiğim dersler.</p><p class="en">Courses where I develop technical making alongside design and scientific thinking.</p></article>
-        <article class="reveal"><span>36 AY / MONTHS</span><div><p class="tr">MEZUN</p><p class="en">GRADUATE</p><h3>DENEYAP</h3></div><p class="tr">Yapay zekâ, robotik, havacılık ve siber güvenlik dâhil 11 teknoloji alanında uygulamalı eğitim.</p><p class="en">Hands-on education across 11 technology fields, including AI, robotics, aviation and cybersecurity.</p></article>
+        <article class="reveal"><span><span class="tr">BUGÜN</span><span class="en">NOW</span></span><div><p class="tr">ÖRGÜN EĞİTİM</p><p class="en">FORMAL EDUCATION</p><h3>Düzce Fen Lisesi</h3></div><p class="tr">Fen bilimleri eğitimi; FRC mekanik ve okul roket takımı çalışmaları.</p><p class="en">Science education, FRC mechanical work and the school rocket team.</p></article>
+        <article class="reveal"><span><span class="tr">DEVAM EDİYOR</span><span class="en">ONGOING</span></span><div><p>BİLSEM</p><h3><span class="tr">Robotik 2 · Yazılım 2<br />3D Tasarım · Biyoloji</span><span class="en">Robotics 2 · Software 2<br />3D Design · Biology</span></h3></div><p class="tr">Teknik üretimi tasarım ve bilimsel düşünmeyle birlikte geliştirdiğim dersler.</p><p class="en">Courses where I develop practical skills alongside design and scientific thinking.</p></article>
+        <article class="reveal"><span><span class="tr">36 AY</span><span class="en">36 MONTHS</span></span><div><p class="tr">MEZUN</p><p class="en">GRADUATE</p><h3>DENEYAP</h3></div><p class="tr">Yapay zekâ, robotik, havacılık ve siber güvenlik dâhil 11 teknoloji alanında uygulamalı eğitim.</p><p class="en">Hands-on education across 11 technology fields, including AI, robotics, aviation and cybersecurity.</p></article>
       </div>
     </section>
 
@@ -121,7 +121,6 @@
   </main>
 
   <footer><p>© <span id="year"></span> Kuzey Mete Kardeş</p><p class="tr">Düzce, Türkiye · Hafif, erişilebilir ve çerezsiz.</p><p class="en">Düzce, Türkiye · Lightweight, accessible and cookie-free.</p><a href="#top"><span class="tr">Başa dön</span><span class="en">Back to top</span> ↑</a></footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=locale-2"></script>
 </body>
 </html>
-
