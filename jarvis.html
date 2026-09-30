@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="JARVIS kişisel yapay zekâ ajanının amacı, mimarisi, hafıza modeli ve geliştirme planı." />
+  <meta name="theme-color" content="#0d0f11" /><title>JARVIS — Mimari ve Geliştirme Planı</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link tr" href="#icerik">İçeriğe geç</a><a class="skip-link en" href="#icerik">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html"><span>K</span><span>M</span></a><p class="header-note">JARVIS / ARCHITECTURE</p>
+    <nav aria-label="Site"><a href="index.html"><span class="tr">Ana sayfa</span><span class="en">Home</span></a><a href="#mimari"><span class="tr">Mimari</span><span class="en">Architecture</span></a><a href="#yol"><span class="tr">Yol haritası</span><span class="en">Roadmap</span></a></nav>
+    <div class="header-actions"><button class="lang-button" type="button" aria-label="Dili değiştir / Switch language"><span data-lang-choice="tr">TR</span><i>/</i><span data-lang-choice="en">EN</span></button><a class="out-link" href="https://github.com/AKKSYkardes/JARVIS">Repo ↗</a></div>
+  </header>
+
+  <main id="icerik" class="project-page">
+    <section class="project-hero">
+      <p class="eyebrow reveal">PROJECT 001 · PERSONAL AI SYSTEM</p>
+      <h1 class="reveal">JARVIS</h1>
+      <div class="project-intro reveal">
+        <p class="tr">Sohbet eden bir araçtan fazlasını hedefleyen; hafızası, kaynak geçmişi ve açık yetki sınırları olan kişisel yapay zekâ ajanı.</p>
+        <p class="en">A personal AI agent designed to be more than a chat interface, with memory, source provenance and explicit permission boundaries.</p>
+        <dl><div><dt class="tr">DURUM</dt><dt class="en">STATUS</dt><dd class="tr">Aktif geliştirme</dd><dd class="en">Active development</dd></div><div><dt class="tr">ODAK</dt><dt class="en">FOCUS</dt><dd>Memory · Context · Safety</dd></div><div><dt class="tr">YAKLAŞIM</dt><dt class="en">APPROACH</dt><dd>Local-first · Modular</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="longform section-rule">
+      <p class="section-code">[ 01 — <span class="tr">PROBLEM</span><span class="en">PROBLEM</span> ]</p>
+      <div class="longform-body">
+        <h2 class="tr">Bağlam kaybolduğunda çalışma da parçalanıyor.</h2><h2 class="en">When context disappears, work becomes fragmented.</h2>
+        <p class="tr">Projeler büyüdükçe kararlar sohbetlere, notlara ve dosyalara dağılıyor. Klasik bir asistan yeni konuşmaya çoğu zaman sıfırdan başlıyor; bir bilginin nereden geldiğini, güncel olup olmadığını veya hangi kararın yerini aldığını güvenilir biçimde izleyemiyor.</p>
+        <p class="en">As projects grow, decisions become scattered across chats, notes and files. A conventional assistant often starts each conversation from zero and cannot reliably track where information came from, whether it is current, or which decision superseded another.</p>
+        <p class="tr">JARVIS'in temel sorusu şu: <strong>Bir yapay zekâ sistemi, kullanıcıyı zaman içinde anlayıp yardımcı olurken kontrolü nasıl kullanıcıda bırakabilir?</strong></p>
+        <p class="en">JARVIS begins with one question: <strong>How can an AI system understand and assist its user over time while keeping control in the user's hands?</strong></p>
+      </div>
+    </section>
+
+    <section class="longform section-rule" id="mimari">
+      <p class="section-code">[ 02 — <span class="tr">SİSTEM MİMARİSİ</span><span class="en">SYSTEM ARCHITECTURE</span> ]</p>
+      <div class="longform-body">
+        <h2 class="tr">Tek model değil, değiştirilebilir katmanlar.</h2><h2 class="en">Not one model, but replaceable layers.</h2>
+        <p class="tr">Mimariyi tek bir modele veya sağlayıcıya bağlamıyorum. Girdi önce bağlam ve yetki sınırlarıyla değerlendirilir; çekirdek hangi hafızanın, aracın ya da araştırma adımının gerektiğini planlar; kritik dış eylemler kullanıcı onayından geçer.</p>
+        <p class="en">The architecture is not tied to one model or provider. Input is first evaluated against context and permission boundaries; the core plans which memory, tool or research step is needed; critical external actions require user approval.</p>
+        <div class="architecture" aria-label="JARVIS system flow">
+          <div><small>01 / INPUT</small><b>User + Current Task</b></div><i>↓</i>
+          <div class="accent-box"><small>02 / CONTEXT</small><b>Scope + Memory + Sources</b></div><i>↓</i>
+          <div><small>03 / CORE</small><b>Understand → Plan → Route</b></div><i>↓</i>
+          <div class="architecture-branches"><span>Memory</span><span>Tools</span><span>Research</span><span>Devices</span></div><i>↓</i>
+          <div class="gate-box"><small>04 / CONTROL</small><b>Tests + Policy + Human Approval</b></div>
+        </div>
+        <div class="principles">
+          <article><span>CORE</span><p class="tr">Planlama, hafıza ve araç koordinasyonunun merkezi.</p><p class="en">The center for planning, memory and tool coordination.</p></article>
+          <article><span>EDGE</span><p class="tr">Raspberry Pi gibi yerel cihazlarda hızlı ve özel işlemler.</p><p class="en">Fast and private tasks on local devices such as Raspberry Pi.</p></article>
+          <article><span>DEVICE</span><p class="tr">ESP32, sensörler ve fiziksel sistemlerle bağlantı.</p><p class="en">Connections to ESP32, sensors and physical systems.</p></article>
+          <article><span>CLIENT</span><p class="tr">Bilgisayar, telefon ve ileride giyilebilir arayüzler.</p><p class="en">Desktop, mobile and future wearable interfaces.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="longform section-rule">
+      <p class="section-code">[ 03 — <span class="tr">KALICI HAFIZA</span><span class="en">PERSISTENT MEMORY</span> ]</p>
+      <div class="longform-body">
+        <h2 class="tr">Hatırlamak kadar, neden hatırladığını bilmek.</h2><h2 class="en">Knowing why it remembers matters as much as remembering.</h2>
+        <p class="tr">Hafıza tasarımının amacı her şeyi sınırsızca saklamak değil; önemli bilgiyi kapsamı ve kaynağıyla birlikte korumak. Mevcut çalışma, Python'un standart SQLite desteğiyle taşınabilir ve bağımlılığı düşük bir temel kuruyor.</p>
+        <p class="en">The memory design is not meant to store everything forever. Its purpose is to preserve important information together with scope and provenance. The current work uses Python's standard SQLite support for a portable, low-dependency foundation.</p>
+        <div class="fact-grid">
+          <article><b>Exact source bytes</b><p class="tr">Saklanan özgün içeriğin bayt düzeyinde doğrulanması.</p><p class="en">Byte-level verification of retained source content.</p></article>
+          <article><b>Provenance</b><p class="tr">Bir bilginin hangi kaynaktan ve hangi süreçte geldiğinin kaydı.</p><p class="en">A record of where information came from and how it entered the system.</p></article>
+          <article><b>Scoped lookup</b><p class="tr">Hafızanın proje ve görev kapsamı dışına kontrolsüz taşmaması.</p><p class="en">Preventing memory from leaking beyond its project or task scope.</p></article>
+          <article><b>Supersession</b><p class="tr">Yeni bir kararın eskisinin yerini aldığını doğrusal biçimde izleme.</p><p class="en">Tracking when a newer decision supersedes an older one.</p></article>
+          <article><b>Atomic transactions</b><p class="tr">Yarım kalan yazımların tutarsız kayıt üretmesini engelleme.</p><p class="en">Preventing interrupted writes from creating inconsistent records.</p></article>
+          <article><b>Integrity checks</b><p class="tr">Yazma ve okuma sırasında SHA-256 ile içerik bütünlüğü kontrolü.</p><p class="en">SHA-256 content integrity checks during writes and reads.</p></article>
+        </div>
+        <aside class="scope-note"><strong class="tr">Şeffaf kapsam notu</strong><strong class="en">Transparent scope note</strong><p class="tr">Bu katman; anlamsal arama, embedding, vektör veritabanı, LLM çağrıları veya otomatik özetleme değildir. Bunlar sonraki katmanların sorumluluğudur.</p><p class="en">This layer is not semantic search, embeddings, a vector database, LLM calls or automatic summarization. Those belong to later layers.</p></aside>
+      </div>
+    </section>
+
+    <section class="longform section-rule" id="yol">
+      <p class="section-code">[ 04 — <span class="tr">YOL HARİTASI</span><span class="en">ROADMAP</span> ]</p>
+      <div class="longform-body">
+        <h2 class="tr">Her katman, bir sonrakinden önce doğrulanıyor.</h2><h2 class="en">Each layer is validated before the next.</h2>
+        <ol class="roadmap">
+          <li class="complete"><span>01</span><div><h3 class="tr">Bağlam sözleşmeleri</h3><h3 class="en">Context contracts</h3><p class="tr">Verinin biçimi, sınırları ve bileşenler arası sözleşmeler.</p><p class="en">Data shape, boundaries and contracts between components.</p></div><b class="tr">TAMAM</b><b class="en">COMPLETE</b></li>
+          <li class="current"><span>02</span><div><h3 class="tr">Kalıcı hafıza</h3><h3 class="en">Persistent memory</h3><p class="tr">SQLite depolama, kaynak geçmişi, bütünlük ve kapsam.</p><p class="en">SQLite storage, provenance, integrity and scope.</p></div><b class="tr">AKTİF</b><b class="en">ACTIVE</b></li>
+          <li><span>03</span><div><h3 class="tr">Ajan çekirdeği</h3><h3 class="en">Agent core</h3><p class="tr">Planlama, yönlendirme ve izin kontrollü araç kullanımı.</p><p class="en">Planning, routing and permission-controlled tool use.</p></div><b class="tr">SONRA</b><b class="en">NEXT</b></li>
+          <li><span>04</span><div><h3 class="tr">Bilgi erişimi</h3><h3 class="en">Knowledge retrieval</h3><p class="tr">Projeye özel arama ve bağlam oluşturma.</p><p class="en">Project-aware search and context building.</p></div><b class="tr">PLAN</b><b class="en">PLANNED</b></li>
+          <li><span>05</span><div><h3 class="tr">Çok cihazlı yapı</h3><h3 class="en">Multi-device system</h3><p class="tr">Yerel bilgisayar, edge ve gömülü cihazların koordinasyonu.</p><p class="en">Coordination across local computers, edge and embedded devices.</p></div><b class="tr">İLERİDE</b><b class="en">FUTURE</b></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="next-project section-rule"><p class="section-code">NEXT PROJECT</p><a href="iron-man.html"><span>Iron Man Helmet + Arm</span><b>↗</b></a></section>
+  </main>
+  <footer><p>© <span id="year"></span> Kuzey Mete Kardeş</p><a href="index.html">← <span class="tr">Ana sayfa</span><span class="en">Home</span></a><a href="#top"><span class="tr">Başa dön</span><span class="en">Back to top</span> ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+

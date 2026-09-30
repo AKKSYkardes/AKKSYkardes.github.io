@@ -1,19 +1,22 @@
-# Kuzey Mete Kardeş — Portföy
+# Kuzey Mete Kardeş — Portfolio
 
-Bu klasör GitHub Pages üzerinde yayımlanmaya hazır statik portföy sitesini içerir.
+Türkçe ve İngilizce, çok sayfalı kişisel portföy sitesi.
 
-## Yayınlama
+## Sayfalar / Pages
 
-1. GitHub'da `AKKSYkardes.github.io` adında herkese açık bir depo oluşturun.
-2. Bu klasördeki `index.html`, `styles.css` ve `script.js` dosyalarını deponun ana dizinine yükleyin.
-3. GitHub Pages etkinleştiğinde site `https://akksykardes.github.io` adresinde yayımlanır.
+- `index.html` — profil, seçili çalışmalar, eğitim ve iletişim
+- `jarvis.html` — JARVIS'in problemi, mimarisi, hafıza modeli ve yol haritası
+- `iron-man.html` — Iron Man kaskı ve kolu için sistem ve üretim planı
 
-## Yayınlamadan önce tamamlanacak alanlar
+## Tasarım ilkeleri
 
-- JARVIS için yayımlanabilir ekran görüntüsü veya mimari diyagram
-- FRC mekanik çalışmalarından yayımlanabilir fotoğraf ve somut katkılar
-- Roket takımındaki deneme görevlerinden yayımlanabilir fotoğraf ve ayrıntılar
-- Proje ekran görüntüleri ve depo bağlantıları
+- Koyu, tipografi odaklı ve özgün arayüz
+- Sistem imleci her zaman görünür
+- Framework, WebGL, canvas ve özel imleç yok
+- Sürekli çalışan animasyon yok
+- `prefers-reduced-motion` ve veri tasarrufu desteği
+- Haricî font, takip kodu ve çerez yok
+- Klavye odağı, atlama bağlantısı ve mobil uyum
 
-Kişisel belgeler, telefon numarası, ev adresi ve kimlik numarası bu siteye eklenmemelidir.
+Dil seçimi tarayıcıda yerel olarak saklanır ve tüm sayfalarda korunur.
 

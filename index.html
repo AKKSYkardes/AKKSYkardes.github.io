@@ -1,238 +1,127 @@
 <!doctype html>
-<html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Kuzey Mete Kardeş — yapay zekâ, robotik, roket ve 3D tasarım üzerine çalışan öğrenci geliştirici."
-    />
-    <meta name="theme-color" content="#111315" />
-    <title>Kuzey Mete Kardeş — Projeler ve Notlar</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#icerik">İçeriğe geç</a>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Kuzey Mete Kardeş — yapay zekâ, yazılım geliştirme, 3D tasarım ve robotik üzerine çalışan öğrenci geliştirici." />
+  <meta name="theme-color" content="#0d0f11" />
+  <title>Kuzey Mete Kardeş — Projeler ve Notlar</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link tr" href="#icerik">İçeriğe geç</a>
+  <a class="skip-link en" href="#content">Skip to content</a>
 
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Kuzey Mete ana sayfa">
-        <span>K</span><span>M</span>
-      </a>
-      <p class="header-note">Kuzey Mete Kardeş</p>
-      <nav aria-label="Ana menü">
-        <a href="#projeler">Projeler</a>
-        <a href="#jarvis">JARVIS</a>
-        <a href="#yolculuk">Yolculuk</a>
-      </nav>
-      <a class="out-link" href="https://github.com/AKKSYkardes">GitHub <span>↗</span></a>
-    </header>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Kuzey Mete Kardeş"><span>K</span><span>M</span></a>
+    <p class="header-note">Kuzey Mete Kardeş</p>
+    <nav aria-label="Ana menü / Main menu">
+      <a class="tr" href="#projeler">Projeler</a><a class="en" href="#projects">Projects</a>
+      <a href="jarvis.html">JARVIS</a>
+      <a class="tr" href="#yolculuk">Yolculuk</a><a class="en" href="#journey">Journey</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-button" type="button" aria-label="Dili değiştir / Switch language"><span data-lang-choice="tr">TR</span><i>/</i><span data-lang-choice="en">EN</span></button>
+      <a class="out-link" href="https://github.com/AKKSYkardes">GitHub ↗</a>
+    </div>
+  </header>
 
-    <main id="icerik">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <p class="edition reveal">Öğrenci · Düzce, Türkiye</p>
-        <div class="hero-title-wrap">
-          <h1 id="hero-title" class="reveal">
-            Kuzey Mete Kardeş.<br />
-            <em>Öğreniyor, proje geliştiriyorum.</em>
-          </h1>
-          <aside class="margin-note reveal" aria-label="Güncel çalışma notu">
-            <span>Şu sıralar</span>
-            <p>JARVIS'in kalıcı hafıza katmanı ve kaynak doğruluğu üzerinde çalışıyorum.</p>
-          </aside>
-        </div>
-        <div class="hero-bottom reveal">
-          <p class="intro">
-            Düzce Fen Lisesi ve BİLSEM öğrencisi, DENEYAP mezunuyum.
-            Yapay zekâ, yazılım geliştirme, 3D tasarım ve robotik ile ilgileniyorum.
-            JARVIS'i geliştiriyor, okulumun FRC ve roket takımlarında çalışıyorum.
-          </p>
-          <a class="round-link" href="#projeler" aria-label="Projeleri gör">
-            <span>Projelerimi incele</span><b>↓</b>
-          </a>
-        </div>
-      </section>
-
-      <section class="manifesto reveal" aria-label="Kısa tanıtım">
-        <p class="side-label">Hakkımda</p>
-        <p class="about-summary">
-          BİLSEM'de Robotik 2, Yazılım 2, 3D Tasarım ve Biyoloji dersleri alıyorum.
-          DENEYAP'ta öğrendiklerimi kendi projelerimde ve takım çalışmalarında
-          uygulayarak geliştirmeye devam ediyorum.
-        </p>
-      </section>
-
-      <section class="projects section-rule" id="projeler" aria-labelledby="projects-title">
-        <div class="section-intro reveal">
-          <p class="side-label">Projeler</p>
-          <div>
-            <h2 id="projects-title">Üzerinde çalıştıklarım</h2>
-            <p>Kişisel projem ve okul takımlarındaki çalışmalarım.</p>
-          </div>
-        </div>
-
-        <article class="project project-main reveal">
-          <div class="project-index">001</div>
-          <div class="project-heading">
-            <p>KİŞİSEL AI EKOSİSTEMİ · DEVAM EDİYOR</p>
-            <h3>JARVIS</h3>
-          </div>
-          <div class="project-story">
-            <p class="project-lead">
-              Sadece sorulara cevap veren değil; projelerimi, kararlarımı ve
-              çalışma biçimimi zaman içinde anlayan bir kişisel yapay zekâ sistemi.
-            </p>
-            <div class="project-columns">
-              <div>
-                <span class="micro-title">Neden başladım?</span>
-                <p>Bilgilerimin farklı sohbetlere ve dosyalara dağılması yerine, bağlamı koruyan tek bir çalışma ortağı istedim.</p>
-              </div>
-              <div>
-                <span class="micro-title">Şimdi ne yapıyorum?</span>
-                <p>Kalıcı hafıza, kaynak geçmişi, yetki sınırları ve cihazlar arası mimariyi küçük parçalara bölerek geliştiriyorum.</p>
-              </div>
-            </div>
-          </div>
-          <a class="project-arrow" href="#jarvis" aria-label="JARVIS ayrıntıları">↘</a>
-        </article>
-
-        <div class="project-pair">
-          <article class="project reveal">
-            <div class="project-index">002</div>
-            <div class="project-heading">
-              <p>ROBOTİK · TAKIM ÇALIŞMASI</p>
-              <h3>FRC Mekanik</h3>
-            </div>
-            <div class="project-story">
-              <p>Düzce Fen Lisesi FRC takımında mekanik süreçlere katılıyor; parçaların fikirden robota uzanan yolunu öğreniyorum.</p>
-              <span class="work-note">tasarım / üretim / birlikte çözme</span>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <div class="project-index">003</div>
-            <div class="project-heading">
-              <p>HAVACILIK · DENEME SÜRECİ</p>
-              <h3>Roket Takımı</h3>
-            </div>
-            <div class="project-story">
-              <p>Alt ekip kararımı verirken hem mekanik hem de aviyonik ekibinin deneme görevlerini yapıyor, iki alanı da uygulayarak tanıyorum.</p>
-              <span class="work-note">mekanik ↔ aviyonik</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="jarvis section-rule" id="jarvis" aria-labelledby="jarvis-title">
-        <div class="section-intro reveal">
-          <p class="side-label">JARVIS</p>
-          <div>
-            <h2 id="jarvis-title">Geliştirdiğim kişisel yapay zekâ ajanı</h2>
-            <p>Projelerimi hatırlayabilen ve izin verdiğim araçlarla çalışabilen bir sistem kurmayı hedefliyorum. Aşağıdaki yapı, geliştirme planını gösteriyor.</p>
-          </div>
-        </div>
-
-        <div class="blueprint reveal">
-          <div class="blueprint-head">
-            <span>Planlanan sistem yapısı</span>
-            <span>Geliştirme aşamasında</span>
-          </div>
-          <div class="blueprint-grid">
-            <div class="blueprint-note note-a">
-              <span>Modüler yapı</span>
-              <p>Model değişebilir.<br />Çekirdek mimari kalmalı.</p>
-            </div>
-            <div class="flow" aria-label="JARVIS sistem akışı">
-              <div class="flow-node user-node"><small>01 / GİRDİ</small><strong>Kullanıcı</strong></div>
-              <i aria-hidden="true">↓</i>
-              <div class="flow-node core-node"><small>02 / ÇEKİRDEK</small><strong>Router + Orchestrator</strong><span>anla · planla · yönlendir</span></div>
-              <i aria-hidden="true">↓</i>
-              <div class="flow-branches">
-                <div class="flow-node"><small>03A</small><strong>Hafıza</strong></div>
-                <div class="flow-node"><small>03B</small><strong>Araçlar</strong></div>
-                <div class="flow-node"><small>03C</small><strong>Araştırma</strong></div>
-              </div>
-              <i aria-hidden="true">↓</i>
-              <div class="flow-node gate-node"><small>04 / GÜVENLİK</small><strong>Test + Denetim + İnsan Onayı</strong></div>
-            </div>
-            <div class="blueprint-note note-b">
-              <span>İnsan onayı</span>
-              <p>Kritik eylemlerde son söz her zaman insanda.</p>
-            </div>
-          </div>
-          <div class="blueprint-caption">
-            <p><b>Hedef:</b> kullanıcıyı tanıyan, fakat kullanıcı adına kontrolsüz karar vermeyen bir “Second Brain”.</p>
-            <p>Yerel çalışma öncelikli · Kaynağı izlenebilir hafıza · Açık izin sınırları</p>
-          </div>
-        </div>
-
-        <div class="layers reveal">
-          <article><span>01</span><h3>Core</h3><p>Planlama, hafıza ve araçların çalıştığı ana zekâ.</p></article>
-          <article><span>02</span><h3>Edge</h3><p>Raspberry Pi gibi cihazlarda yerel ve hızlı işlem.</p></article>
-          <article><span>03</span><h3>Device</h3><p>Sensörler, ESP32 ve fiziksel dünyayla bağlantı.</p></article>
-          <article><span>04</span><h3>Client</h3><p>Bilgisayar, telefon ve gelecekte giyilebilir arayüzler.</p></article>
-        </div>
-
-        <div class="now-next reveal">
-          <div class="now-next-title"><span>GELİŞTİRME PLANI</span><h3>Adım adım ilerliyorum.</h3></div>
-          <ol>
-            <li class="done"><span>01</span><p>Bağlam sözleşmeleri</p><b>TAMAM</b></li>
-            <li class="active"><span>02</span><p>Kalıcı hafıza</p><b>MASADA</b></li>
-            <li><span>03</span><p>Agent çekirdeği</p><b>SONRA</b></li>
-            <li><span>04</span><p>Çok cihazlı yapı</p><b>İLERİDE</b></li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="journey section-rule" id="yolculuk" aria-labelledby="journey-title">
-        <div class="section-intro reveal">
-          <p class="side-label">Eğitim</p>
-          <div>
-            <h2 id="journey-title">Eğitim ve atölyeler</h2>
-          </div>
-        </div>
-        <div class="journey-list">
-          <article class="reveal">
-            <span class="year">BUGÜN</span>
-            <div><p>ÖRGÜN EĞİTİM</p><h3>Düzce Fen Lisesi</h3></div>
-            <p>Fen bilimleri eğitiminin yanında FRC mekanik ve roket takımı çalışmalarına katılıyorum.</p>
-          </article>
-          <article class="reveal">
-            <span class="year">DEVAM</span>
-            <div><p>DESTEK EĞİTİMİ</p><h3>BİLSEM</h3></div>
-            <p>Robotik 2, Yazılım 2, 3D Tasarım ve Biyoloji dersleri alıyorum.</p>
-          </article>
-          <article class="reveal">
-            <span class="year">36 AY</span>
-            <div><p>MEZUN</p><h3>DENEYAP</h3></div>
-            <p>Yapay zekâ, robotik, havacılık ve siber güvenlik dâhil 11 alanda uygulamalı eğitim aldım.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact section-rule reveal" aria-labelledby="contact-title">
-        <p class="side-label">İletişim</p>
+  <main id="icerik">
+    <section class="hero" id="top">
+      <p class="eyebrow reveal tr">ÖĞRENCİ GELİŞTİRİCİ · DÜZCE, TÜRKİYE</p>
+      <p class="eyebrow reveal en">STUDENT DEVELOPER · DÜZCE, TÜRKİYE</p>
+      <div class="hero-grid">
         <div>
-          <h2 id="contact-title">Projeler hakkında konuşalım.</h2>
-          <p>Yeni teknolojiler, öğrenci projeleri ve üretme süreci üzerine konuşmaya açığım.</p>
-          <a href="https://github.com/AKKSYkardes">github.com/AKKSYkardes <span>↗</span></a>
+          <h1 class="reveal tr">Merak ettiğim şeyi<br /><em>projeye dönüştürüyorum.</em></h1>
+          <h1 class="reveal en">I turn curiosity<br /><em>into working projects.</em></h1>
+          <p class="hero-copy reveal tr">Yapay zekâ, yazılım geliştirme, 3D tasarım ve robotikle ilgileniyorum. Öğrendiklerimi yalnızca not etmek yerine çalışan sistemlere dönüştürmeye çalışıyorum.</p>
+          <p class="hero-copy reveal en">I am interested in artificial intelligence, software development, 3D design and robotics. I try to turn what I learn into working systems, not just notes.</p>
         </div>
-      </section>
-    </main>
+        <aside class="status-card reveal">
+          <span class="tr">ŞU SIRALAR</span><span class="en">CURRENTLY</span>
+          <p class="tr">JARVIS'in kalıcı hafıza katmanı, kaynak doğruluğu ve güvenli araç kullanımı.</p>
+          <p class="en">Persistent memory, source integrity and safe tool use for JARVIS.</p>
+          <a href="jarvis.html"><span class="tr">Mimariyi incele</span><span class="en">Explore the architecture</span> →</a>
+        </aside>
+      </div>
+      <a class="scroll-cue" href="#projeler"><span class="tr">Seçili çalışmalar</span><span class="en">Selected work</span><b>↓</b></a>
+    </section>
 
-    <footer>
-      <p>© <span id="year"></span> Kuzey Mete Kardeş</p>
-      <p>Düzce, Türkiye · Son düzenleme: Eylül 2026</p>
-      <a href="#top">Başa dön ↑</a>
-    </footer>
+    <section class="statement reveal" aria-label="Hakkımda / About">
+      <p class="section-code">[ 01 — <span class="tr">YAKLAŞIM</span><span class="en">APPROACH</span> ]</p>
+      <p class="statement-text tr">Hazır cevaplardan çok, doğru soruyu kurmaya; büyük fikirlerden çok, denenebilir küçük adımlara inanıyorum.</p>
+      <p class="statement-text en">I care more about forming the right question than finding a quick answer, and more about testable steps than oversized ideas.</p>
+      <div class="statement-note">
+        <p class="tr">Düzce Fen Lisesi ve BİLSEM öğrencisi, DENEYAP mezunuyum. Okul takımlarında ve kişisel projelerimde mekanik ile yazılım arasındaki bağı öğreniyorum.</p>
+        <p class="en">I study at Düzce Science High School and BİLSEM, and I am a DENEYAP graduate. Through school teams and personal projects, I am learning the connection between mechanics and software.</p>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="work section-rule" id="projeler">
+      <div class="section-heading reveal">
+        <p class="section-code">[ 02 — <span class="tr">SEÇİLİ ÇALIŞMALAR</span><span class="en">SELECTED WORK</span> ]</p>
+        <h2 class="tr">Fikirden sisteme.</h2><h2 class="en">From idea to system.</h2>
+      </div>
+
+      <a class="work-row reveal" href="jarvis.html">
+        <span class="work-number">001</span>
+        <div><p>PERSONAL AI SYSTEM</p><h3>JARVIS</h3></div>
+        <p class="work-description tr">Projeleri, kararları ve kaynakları zaman içinde ilişkilendirebilen; kritik eylemlerde insan onayını koruyan kişisel ajan mimarisi.</p>
+        <p class="work-description en">A personal agent architecture designed to connect projects, decisions and sources over time while preserving human approval for critical actions.</p>
+        <span class="work-state"><i></i><span class="tr">GELİŞİYOR</span><span class="en">IN PROGRESS</span></span><b class="row-arrow">↗</b>
+      </a>
+
+      <a class="work-row reveal" href="iron-man.html">
+        <span class="work-number">002</span>
+        <div><p>WEARABLE ROBOTICS</p><h3>Iron Man<br />Kaskı + Kolu</h3></div>
+        <p class="work-description tr">3D baskı, hareketli mekanizma, elektronik ve mikrodenetleyici yazılımını tek bir giyilebilir prototipte birleştirme planı.</p>
+        <p class="work-description en">A plan to combine 3D printing, moving mechanisms, electronics and microcontroller software in one wearable prototype.</p>
+        <span class="work-state planned"><i></i><span class="tr">PLANLAMA</span><span class="en">PLANNING</span></span><b class="row-arrow">↗</b>
+      </a>
+
+      <article class="work-row reveal">
+        <span class="work-number">003</span>
+        <div><p>TEAM ENGINEERING</p><h3>FRC + Roket</h3></div>
+        <p class="work-description tr">FRC'de mekanik; roket takımında ise karar sürecinde olduğum için hem mekanik hem aviyonik deneme görevleri.</p>
+        <p class="work-description en">Mechanical work in FRC; trial tasks in both mechanics and avionics for the rocket team while I decide on a sub-team.</p>
+        <span class="work-state"><i></i><span class="tr">ÖĞRENİYORUM</span><span class="en">LEARNING</span></span>
+      </article>
+    </section>
+
+    <section class="method section-rule">
+      <div class="section-heading reveal">
+        <p class="section-code">[ 03 — <span class="tr">ÇALIŞMA BİÇİMİ</span><span class="en">METHOD</span> ]</p>
+        <h2 class="tr">Önce anlamak, sonra kurmak.</h2><h2 class="en">Understand first, then build.</h2>
+      </div>
+      <div class="method-grid">
+        <article class="reveal"><span>01</span><h3 class="tr">Problemi sınırla</h3><h3 class="en">Frame the problem</h3><p class="tr">Ne yapacağımı kadar neyi henüz yapmayacağımı da belirlerim.</p><p class="en">I define both what I will build and what I will deliberately leave out.</p></article>
+        <article class="reveal"><span>02</span><h3 class="tr">Mimariyi çiz</h3><h3 class="en">Map the architecture</h3><p class="tr">Bileşenleri, veri akışını ve güven sınırlarını koddan önce görünür kılarım.</p><p class="en">I make components, data flow and trust boundaries visible before code.</p></article>
+        <article class="reveal"><span>03</span><h3 class="tr">Küçük doğrula</h3><h3 class="en">Validate in small steps</h3><p class="tr">Her parçayı tek başına test eder, sonuçtan sonra sıradaki katmana geçerim.</p><p class="en">I test each part independently before moving to the next layer.</p></article>
+        <article class="reveal"><span>04</span><h3 class="tr">Kaydı koru</h3><h3 class="en">Preserve the record</h3><p class="tr">Kararları, kaynakları ve hataları belgelendirerek yeniden üretilebilir tutarım.</p><p class="en">I document decisions, sources and failures so the work stays reproducible.</p></article>
+      </div>
+    </section>
+
+    <section class="journey section-rule" id="yolculuk">
+      <div class="section-heading reveal">
+        <p class="section-code">[ 04 — <span class="tr">EĞİTİM</span><span class="en">EDUCATION</span> ]</p>
+        <h2 class="tr">Farklı disiplinler, aynı merak.</h2><h2 class="en">Different disciplines, one curiosity.</h2>
+      </div>
+      <div class="timeline">
+        <article class="reveal"><span>BUGÜN / NOW</span><div><p class="tr">ÖRGÜN EĞİTİM</p><p class="en">FORMAL EDUCATION</p><h3>Düzce Fen Lisesi</h3></div><p class="tr">Fen bilimleri eğitimi; FRC mekanik ve okul roket takımı çalışmaları.</p><p class="en">Science education, FRC mechanical work and the school rocket team.</p></article>
+        <article class="reveal"><span>DEVAM / ONGOING</span><div><p>BİLSEM</p><h3>Robotik 2 · Yazılım 2<br />3D Tasarım · Biyoloji</h3></div><p class="tr">Teknik üretimi tasarım ve bilimsel düşünmeyle birlikte geliştirdiğim dersler.</p><p class="en">Courses where I develop technical making alongside design and scientific thinking.</p></article>
+        <article class="reveal"><span>36 AY / MONTHS</span><div><p class="tr">MEZUN</p><p class="en">GRADUATE</p><h3>DENEYAP</h3></div><p class="tr">Yapay zekâ, robotik, havacılık ve siber güvenlik dâhil 11 teknoloji alanında uygulamalı eğitim.</p><p class="en">Hands-on education across 11 technology fields, including AI, robotics, aviation and cybersecurity.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section-rule reveal">
+      <p class="section-code">[ 05 — <span class="tr">İLETİŞİM</span><span class="en">CONTACT</span> ]</p>
+      <div><h2 class="tr">Birlikte düşünelim.</h2><h2 class="en">Let's think together.</h2><p class="tr">Öğrenci projeleri, teknoloji ve üretme süreci üzerine konuşmaya açığım.</p><p class="en">I am open to conversations about student projects, technology and the process of making.</p><a href="https://github.com/AKKSYkardes">github.com/AKKSYkardes ↗</a></div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Kuzey Mete Kardeş</p><p class="tr">Düzce, Türkiye · Hafif, erişilebilir ve çerezsiz.</p><p class="en">Düzce, Türkiye · Lightweight, accessible and cookie-free.</p><a href="#top"><span class="tr">Başa dön</span><span class="en">Back to top</span> ↑</a></footer>
+  <script src="script.js"></script>
+</body>
 </html>
 

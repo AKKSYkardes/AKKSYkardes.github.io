@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Iron Man kaskı ve kolu: 3D baskı, mekanik, elektronik ve yazılım proje planı." />
+  <meta name="theme-color" content="#0d0f11" /><title>Iron Man Kaskı + Kolu — Proje Planı</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link tr" href="#icerik">İçeriğe geç</a><a class="skip-link en" href="#icerik">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html"><span>K</span><span>M</span></a><p class="header-note">IRON MAN / BUILD PLAN</p>
+    <nav aria-label="Site"><a href="index.html"><span class="tr">Ana sayfa</span><span class="en">Home</span></a><a href="#sistem"><span class="tr">Sistem</span><span class="en">System</span></a><a href="#asamalar"><span class="tr">Aşamalar</span><span class="en">Phases</span></a></nav>
+    <div class="header-actions"><button class="lang-button" type="button" aria-label="Dili değiştir / Switch language"><span data-lang-choice="tr">TR</span><i>/</i><span data-lang-choice="en">EN</span></button><a class="out-link" href="https://github.com/AKKSYkardes/iron-man-helmet-arm">Repo ↗</a></div>
+  </header>
+  <main id="icerik" class="project-page">
+    <section class="project-hero">
+      <p class="eyebrow reveal">PROJECT 002 · WEARABLE ROBOTICS</p>
+      <h1 class="reveal">Iron Man<br /><em>Helmet + Arm</em></h1>
+      <div class="project-intro reveal">
+        <p class="tr">3D baskı, hareketli mekanizma, elektronik ve yazılımı tek bir giyilebilir prototipte bir araya getirme projesi.</p>
+        <p class="en">A project that brings 3D printing, moving mechanisms, electronics and software together in one wearable prototype.</p>
+        <dl><div><dt class="tr">DURUM</dt><dt class="en">STATUS</dt><dd class="tr">Planlama</dd><dd class="en">Planning</dd></div><div><dt class="tr">ALANLAR</dt><dt class="en">FIELDS</dt><dd>Mechanics · Electronics · Code</dd></div><div><dt class="tr">YÖNTEM</dt><dt class="en">METHOD</dt><dd>Prototype → Test → Revise</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="longform section-rule">
+      <p class="section-code">[ 01 — <span class="tr">AMAÇ</span><span class="en">PURPOSE</span> ]</p>
+      <div class="longform-body"><h2 class="tr">Bir kostümden çok, çalışan bir sistem.</h2><h2 class="en">More than a costume: a working system.</h2><p class="tr">Bu projede hedefim yalnızca dış görünüşü üretmek değil. Mekanik hareketi, elektronik kontrolü ve yazılımı güvenli biçimde birleştiren; sökülüp geliştirilebilen bir prototip oluşturmak istiyorum.</p><p class="en">My goal is not only to reproduce the appearance. I want to create a serviceable prototype that safely combines mechanical movement, electronic control and software.</p><p class="tr">Kask ve kol aynı tasarım dilini paylaşacak, ancak ayrı modüller olarak geliştirilecek. Böylece bir bölümdeki sorun diğer bölümün ilerlemesini durdurmayacak.</p><p class="en">The helmet and arm will share one design language but will be developed as separate modules, so a problem in one does not stop progress on the other.</p></div>
+    </section>
+
+    <section class="longform section-rule" id="sistem">
+      <p class="section-code">[ 02 — <span class="tr">SİSTEMLER</span><span class="en">SYSTEMS</span> ]</p>
+      <div class="longform-body"><h2 class="tr">Dört disiplin, tek prototip.</h2><h2 class="en">Four disciplines, one prototype.</h2>
+        <div class="system-grid">
+          <article><span>01 / FORM</span><h3>3D Design + Print</h3><p class="tr">Ölçek, parça yerleşimi, baskı yönü, tolerans ve montaj noktaları.</p><p class="en">Scale, part layout, print orientation, tolerance and assembly points.</p></article>
+          <article><span>02 / MOTION</span><h3>Mechanics</h3><p class="tr">Yüz plakası mekanizması, bağlantılar, servo konumu ve hareket sınırları.</p><p class="en">Faceplate mechanism, linkages, servo placement and motion limits.</p></article>
+          <article><span>03 / SIGNAL</span><h3>Electronics</h3><p class="tr">Güç dağıtımı, LED'ler, sensörler, anahtarlar ve güvenli kablolama.</p><p class="en">Power distribution, LEDs, sensors, switches and safe wiring.</p></article>
+          <article><span>04 / CONTROL</span><h3>Software</h3><p class="tr">Mikrodenetleyici durumları, servo kontrolü, efektler ve hata davranışı.</p><p class="en">Microcontroller states, servo control, effects and failure behavior.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="longform section-rule" id="asamalar">
+      <p class="section-code">[ 03 — <span class="tr">ÜRETİM PLANI</span><span class="en">BUILD PLAN</span> ]</p>
+      <div class="longform-body"><h2 class="tr">Önce masa üzerinde, sonra giyilebilir.</h2><h2 class="en">Bench-tested first, wearable second.</h2>
+        <ol class="roadmap">
+          <li class="current"><span>01</span><div><h3 class="tr">Araştırma ve gereksinimler</h3><h3 class="en">Research and requirements</h3><p class="tr">Boyut, bütçe, kullanılacak model, hareket ve güvenlik gereksinimleri.</p><p class="en">Dimensions, budget, model choice, movement and safety requirements.</p></div><b class="tr">AKTİF</b><b class="en">ACTIVE</b></li>
+          <li><span>02</span><div><h3 class="tr">Masaüstü mekanizma</h3><h3 class="en">Bench mechanism</h3><p class="tr">Giyilebilir parçadan önce servo ve bağlantı geometrisinin açık test düzeneği.</p><p class="en">An open test rig for servo and linkage geometry before the wearable shell.</p></div><b class="tr">SONRA</b><b class="en">NEXT</b></li>
+          <li><span>03</span><div><h3 class="tr">Elektronik prototip</h3><h3 class="en">Electronics prototype</h3><p class="tr">Akım ihtiyacı, pil koruması, kablolama ve acil durdurma denemeleri.</p><p class="en">Current draw, battery protection, wiring and emergency stop tests.</p></div><b>PLANNED</b></li>
+          <li><span>04</span><div><h3 class="tr">Kask entegrasyonu</h3><h3 class="en">Helmet integration</h3><p class="tr">Mekanik, ışık, ses ve kontrol yazılımının kademeli birleşimi.</p><p class="en">Gradual integration of mechanics, light, sound and control software.</p></div><b>PLANNED</b></li>
+          <li><span>05</span><div><h3 class="tr">Kol modülü</h3><h3 class="en">Arm module</h3><p class="tr">Sensör, ışık ve ergonomi testleriyle bağımsız giyilebilir modül.</p><p class="en">An independent wearable module with sensor, light and ergonomics tests.</p></div><b>FUTURE</b></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="longform section-rule">
+      <p class="section-code">[ 04 — <span class="tr">GÜVENLİK + LİSANS</span><span class="en">SAFETY + LICENSING</span> ]</p>
+      <div class="longform-body"><h2 class="tr">Paylaşılabilir olanı paylaşmak.</h2><h2 class="en">Share only what can be shared.</h2><p class="tr">Satın alınan 3D model dosyaları, lisansları açıkça yeniden dağıtıma izin vermedikçe GitHub'a yüklenmeyecek. Depoda kendi kodum, bağlantı şemalarım, parça listem, kendi tasarımlarım ve yapım notlarım bulunacak.</p><p class="en">Purchased 3D model files will not be uploaded to GitHub unless their licenses explicitly permit redistribution. The repository will contain my own code, wiring diagrams, bill of materials, original designs and build notes.</p><aside class="scope-note"><strong class="tr">Güvenlik ilkesi</strong><strong class="en">Safety principle</strong><p class="tr">Hareketli parçalar düşük kuvvetle test edilecek; güç sistemi korumalı olacak; giyilebilir denemeler ancak masaüstü testleri tamamlandıktan sonra yapılacak.</p><p class="en">Moving parts will be tested at low force, power will be protected, and wearable trials will begin only after bench tests are complete.</p></aside></div>
+    </section>
+
+    <section class="next-project section-rule"><p class="section-code">NEXT PROJECT</p><a href="jarvis.html"><span>JARVIS</span><b>↗</b></a></section>
+  </main>
+  <footer><p>© <span id="year"></span> Kuzey Mete Kardeş</p><a href="index.html">← <span class="tr">Ana sayfa</span><span class="en">Home</span></a><a href="#top"><span class="tr">Başa dön</span><span class="en">Back to top</span> ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
