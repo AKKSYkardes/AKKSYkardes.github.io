@@ -44,6 +44,18 @@ JARVIS örnek akışı temsili senaryodur, gerçek yürütme kaydı veya canlı 
 Kaynak kodu özel olduğu için ziyaretçi özel depoya yönlendirilmez.
 Hypium okul takımı bağlantısı: https://teamhypium.com.tr/
 
+## Etkileşimli örnek ve günlük
+
+`simulation.js` yalnız tarayıcıdaki sabit `demo-01` örneğini gösterir. Ağ isteği,
+model çağrısı veya gerçek JARVIS/veritabanı erişimi yoktur. Dört okuma/aktarım
+izni kombinasyonu, sıfırlama ve dil değişimi desteklenir. İzin değişince eski
+sonuç temizlenir. Gerçek sistemin tüm güvenlik kontrollerini simüle etmez.
+
+Ana sayfadaki SVG çizimler mimari ve konsept anlatımıdır; gerçek CAD/prototip
+görselleri değildir. `jarvis-log.html` tarihli yayın notlarını içerir. Not tarihleri
+bileşen tamamlanma tarihleri değildir. Yeni gerçek gelişmeler oldukça günlüğe
+elle tarihli kayıt ekleyin; canlı aşama kaydı teknik yazıları otomatik değiştirmez.
+
 `jarvis-memory.html` ve `jarvis-runtime.html` tarihli teknik anlatımlardır;
 uygulama değiştiğinde metinleri ayrıca güncelleyin. Canlı panel teknik metni yeniden yazmaz.
 

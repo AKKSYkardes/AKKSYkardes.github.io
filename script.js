@@ -4,6 +4,7 @@
   const supported = ["tr", "en-US", "en-GB"];
   const page = location.pathname.split("/").pop() || "index.html";
   const titles = {
+"jarvis-log.html":["JARVIS — Geliştirme Günlüğü","JARVIS — Build Log"],
 "jarvis-runtime.html":["JARVIS — Ajan Döngüsü ve Geliştirme Notları","JARVIS — Agent Runtime and Development Notes"],
 "jarvis-memory.html":["JARVIS — Hafıza ve Kaynaklar","JARVIS — Memory and Provenance"],
     "index.html": ["Kuzey Mete Kardeş — Projeler ve Notlar", "Kuzey Mete Kardeş — Projects and Notes"],
@@ -11,6 +12,7 @@
     "iron-man.html": ["Iron Man Kaskı + Kolu — Proje Planı", "Iron Man Helmet + Arm — Project Plan"]
   };
   const descriptions = {
+"jarvis-log.html":["JARVIS geliştirme sürecinden tarihli durum kayıtları ve teknik kararlar.","Dated status snapshots and technical decisions from the JARVIS build."],
 "jarvis-runtime.html":["Uygulanan çekirdek bileşenler, aralarındaki veri akışı ve bugün geçerli olan sınırlar.","Implemented core components, their data flow and current operating limits."],
 "jarvis-memory.html":["Bir bilginin kendisi kadar kaynağını, kapsamını ve hangi kararın yerini aldığını koruyan hafıza katmanı.","A memory layer that preserves provenance, scope and decision history alongside information."],
     "index.html": ["Kuzey Mete Kardeş — yapay zekâ, yazılım geliştirme, 3D tasarım ve robotikle ilgilenen öğrenci geliştirici.", "Kuzey Mete Kardeş — a student developer interested in AI, software development, 3D design and robotics."],
