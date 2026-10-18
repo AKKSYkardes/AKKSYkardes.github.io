@@ -6,7 +6,7 @@ Türkçe ve İngilizce, çok sayfalı kişisel portföy sitesi.
 
 - `index.html` — profil, seçili çalışmalar, eğitim ve iletişim
 - `jarvis.html` — JARVIS'in problemi, mimarisi, hafıza modeli ve yol haritası
-- `iron-man.html` — Iron Man kaskı ve kolu için sistem ve üretim planı
+- `jarvis-head.html` — JARVIS robotik kafa / fiziksel arayüz konsepti
 
 ## Tasarım ilkeleri
 
@@ -59,3 +59,5 @@ elle tarihli kayıt ekleyin; canlı aşama kaydı teknik yazıları otomatik de�
 `jarvis-memory.html` ve `jarvis-runtime.html` tarihli teknik anlatımlardır;
 uygulama değiştiğinde metinleri ayrıca güncelleyin. Canlı panel teknik metni yeniden yazmaz.
 
+
+Eski proje adresi yalnız yeni konsepte yönlendirir ve noindex içerir. Robotik kafa henüz konsepttir; canlı JARVIS yazılım aşamalarının sayısını değiştirmez.
