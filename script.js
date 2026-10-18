@@ -4,11 +4,15 @@
   const supported = ["tr", "en-US", "en-GB"];
   const page = location.pathname.split("/").pop() || "index.html";
   const titles = {
+"jarvis-runtime.html":["JARVIS — Ajan Döngüsü ve Geliştirme Notları","JARVIS — Agent Runtime and Development Notes"],
+"jarvis-memory.html":["JARVIS — Hafıza ve Kaynaklar","JARVIS — Memory and Provenance"],
     "index.html": ["Kuzey Mete Kardeş — Projeler ve Notlar", "Kuzey Mete Kardeş — Projects and Notes"],
     "jarvis.html": ["JARVIS — Mimari ve Geliştirme Planı", "JARVIS — Architecture and Development Plan"],
     "iron-man.html": ["Iron Man Kaskı + Kolu — Proje Planı", "Iron Man Helmet + Arm — Project Plan"]
   };
   const descriptions = {
+"jarvis-runtime.html":["Uygulanan çekirdek bileşenler, aralarındaki veri akışı ve bugün geçerli olan sınırlar.","Implemented core components, their data flow and current operating limits."],
+"jarvis-memory.html":["Bir bilginin kendisi kadar kaynağını, kapsamını ve hangi kararın yerini aldığını koruyan hafıza katmanı.","A memory layer that preserves provenance, scope and decision history alongside information."],
     "index.html": ["Kuzey Mete Kardeş — yapay zekâ, yazılım geliştirme, 3D tasarım ve robotikle ilgilenen öğrenci geliştirici.", "Kuzey Mete Kardeş — a student developer interested in AI, software development, 3D design and robotics."],
     "jarvis.html": ["JARVIS kişisel yapay zekâ ajanının amacı, mimarisi, hafıza modeli ve geliştirme planı.", "The purpose, architecture, memory model and development plan of the JARVIS personal AI agent."],
     "iron-man.html": ["Iron Man kaskı ve kolu: 3D baskı, mekanik, elektronik ve yazılım proje planı.", "Iron Man helmet and arm: a project plan combining 3D printing, mechanics, electronics and software."]
@@ -22,7 +26,9 @@
   function setLanguage(locale) {
     if (!supported.includes(locale)) return;
     root.dataset.lang = locale;
+
     root.lang = locale;
+    document.dispatchEvent(new CustomEvent("localechange", {detail: locale}));
     const english = locale !== "tr";
     try { localStorage.setItem("site-language", locale); } catch (_) { /* Continue without persistence. */ }
     document.querySelectorAll("[data-locale]").forEach(button => {

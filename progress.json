@@ -1,0 +1,45 @@
+{
+  "updatedAt": "2026-10-18T16:59:01Z",
+  "milestones": [
+    {
+      "tr": "Bağlam sözleşmeleri (C0)",
+      "en": "Context contracts (C0)",
+      "status": "done"
+    },
+    {
+      "tr": "SQLite kalıcı hafıza ve bütünlük (C1/C1.1)",
+      "en": "SQLite memory and integrity (C1/C1.1)",
+      "status": "done"
+    },
+    {
+      "tr": "Olay altyapısı ve LLM Gateway",
+      "en": "Event infrastructure and LLM Gateway",
+      "status": "done"
+    },
+    {
+      "tr": "Karar sözleşmeleri ve izin kontrollü araçlar (R1/R2)",
+      "en": "Decision contracts and permission-controlled tools (R1/R2)",
+      "status": "done"
+    },
+    {
+      "tr": "Sınırlı ajan yürütme döngüsü (R3)",
+      "en": "Bounded agent execution loop (R3)",
+      "status": "done"
+    },
+    {
+      "tr": "R3 bağımsız güvenlik incelemesi",
+      "en": "Independent security review of R3",
+      "status": "active"
+    },
+    {
+      "tr": "Projeye özel bilgi erişimi ve bağlam oluşturma",
+      "en": "Project-aware retrieval and context building",
+      "status": "planned"
+    },
+    {
+      "tr": "Yerel bilgisayar, edge ve gömülü cihaz koordinasyonu",
+      "en": "Local, edge and embedded device coordination",
+      "status": "planned"
+    }
+  ]
+}

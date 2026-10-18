@@ -4,13 +4,13 @@
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="JARVIS kişisel yapay zekâ ajanının amacı, mimarisi, hafıza modeli ve geliştirme planı." />
   <meta name="theme-color" content="#0d0f11" /><title>JARVIS — Mimari ve Geliştirme Planı</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="styles.css?v=locale-2" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="styles.css?v=jarvis-3" />
 </head>
 <body id="top">
   <a class="skip-link tr" href="#icerik">İçeriğe geç</a><a class="skip-link en" href="#icerik">Skip to content</a>
   <header class="site-header">
     <a class="wordmark" href="index.html"><span>K</span><span>M</span></a><p class="header-note"><span class="tr">JARVIS / MİMARİ</span><span class="en">JARVIS / ARCHITECTURE</span></p>
-    <nav aria-label="Site"><a href="index.html"><span class="tr">Ana sayfa</span><span class="en">Home</span></a><a href="#mimari"><span class="tr">Mimari</span><span class="en">Architecture</span></a><a href="#yol"><span class="tr">Yol haritası</span><span class="en">Roadmap</span></a></nav>
+    <nav aria-label="Site"><a href="index.html"><span class="tr">Ana sayfa</span><span class="en">Home</span></a><a href="#mimari"><span class="tr">Mimari</span><span class="en">Architecture</span></a><a href="#ilerleme"><span class="tr">Yol haritası</span><span class="en">Roadmap</span></a></nav>
     <div class="header-actions"><div class="language-picker" role="group" aria-label="Dil seçimi"><p><span class="tr">Sayfayı hangi dilde incelemek istersiniz?</span><span class="en">Which language would you like to use?</span></p><div class="language-options"><button type="button" data-locale="en-US" lang="en-US" aria-pressed="false">EN (US)</button><button type="button" data-locale="en-GB" lang="en-GB" aria-pressed="false">EN (UK)</button><button type="button" data-locale="tr" lang="tr" aria-pressed="true">TR</button></div></div><a class="out-link" href="https://github.com/AKKSYkardes/JARVIS"><span class="tr">Depo ↗</span><span class="en">Repository ↗</span></a></div>
   </header>
 
@@ -25,6 +25,7 @@
       </div>
     </section>
 
+<section class="section-rule progress-panel" id="ilerleme" data-progress><p class="section-code">[ JARVIS — <span class="tr">GÜNCEL DURUM</span><span class="en">CURRENT STATUS</span> ]</p><div class="progress-heading"><h2><span class="tr">Neredeyim, sırada ne var?</span><span class="en">Where am I, what comes next?</span></h2><a href="jarvis-runtime.html"><span class="tr">Teknik günlüğü oku</span><span class="en">Read the technical notes</span> ↗</a></div><div data-progress-content></div><p data-progress-health role="status"><span class="tr">İlerleme kaydı yükleniyor…</span><span class="en">Loading progress…</span></p><p class="progress-note"><span class="tr">Aşamalar eşit ağırlıklıdır; grafik ürünün tamamlanma yüzdesini veya süre tahminini göstermez. Açık sayfa 60 saniyede bir kontrol edilir.</span><span class="en">Milestones have equal weight; this chart is not a product completion percentage or time estimate. An open page checks every 60 seconds.</span></p><a href="https://github.com/AKKSYkardes/AKKSYkardes.github.io/issues/1"><span class="tr">İlerleme kaydı ve güncellemeler</span><span class="en">Progress record and updates</span> ↗</a><noscript><p><span class="tr">Canlı grafik için JavaScript gerekli. Güncel aşamaları yukarıdaki ilerleme kaydından okuyabilirsin.</span><span class="en">JavaScript is required for the live chart. Read current milestones in the progress record above.</span></p></noscript></section>
     <section class="longform section-rule">
       <p class="section-code">[ 01 — <span class="tr">PROBLEM</span><span class="en">PROBLEM</span> ]</p>
       <div class="longform-body">
@@ -80,19 +81,14 @@
       <p class="section-code">[ 04 — <span class="tr">YOL HARİTASI</span><span class="en">ROADMAP</span> ]</p>
       <div class="longform-body">
         <h2 class="tr">Her katman, bir sonrakinden önce doğrulanıyor.</h2><h2 class="en">Each layer is validated before the next.</h2>
-        <ol class="roadmap">
-          <li class="complete"><span>01</span><div><h3 class="tr">Bağlam sözleşmeleri</h3><h3 class="en">Context contracts</h3><p class="tr">Verinin biçimi, sınırları ve bileşenler arası sözleşmeler.</p><p class="en">Data shape, boundaries and contracts between components.</p></div><b class="tr">TAMAM</b><b class="en">COMPLETE</b></li>
-          <li class="current"><span>02</span><div><h3 class="tr">Kalıcı hafıza</h3><h3 class="en">Persistent memory</h3><p class="tr">SQLite depolama, kaynak geçmişi, bütünlük ve kapsam.</p><p class="en">SQLite storage, provenance, integrity and scope.</p></div><b class="tr">AKTİF</b><b class="en">ACTIVE</b></li>
-          <li><span>03</span><div><h3 class="tr">Ajan çekirdeği</h3><h3 class="en">Agent core</h3><p class="tr">Planlama, yönlendirme ve izin kontrollü araç kullanımı.</p><p class="en">Planning, routing and permission-controlled tool use.</p></div><b class="tr">SONRA</b><b class="en">NEXT</b></li>
-          <li><span>04</span><div><h3 class="tr">Bilgi erişimi</h3><h3 class="en">Knowledge retrieval</h3><p class="tr">Projeye özel arama ve bağlam oluşturma.</p><p class="en">Project-aware search and context building.</p></div><b class="tr">PLAN</b><b class="en">PLANNED</b></li>
-          <li><span>05</span><div><h3 class="tr">Çok cihazlı yapı</h3><h3 class="en">Multi-device system</h3><p class="tr">Yerel bilgisayarlar, uç bilişim cihazları ve gömülü sistemler arasında koordinasyon.</p><p class="en">Coordination across local computers, edge and embedded devices.</p></div><b class="tr">İLERİDE</b><b class="en">FUTURE</b></li>
-        </ol>
+<p><span class="tr">Canlı aşama listesi ve aktif çalışma yukarıdaki ilerleme panelinde tek kaynaktan gösteriliyor.</span><span class="en">The live milestone list and active work are shown in the progress panel above from one source.</span></p><div class="fact-grid"><article><h3><a href="jarvis-memory.html"><span class="tr">Hafıza ve kaynaklar</span><span class="en">Memory and provenance</span> →</a></h3><p><span class="tr">C0/C1: kapsam, SQLite depolama ve veri bütünlüğü.</span><span class="en">C0/C1: scopes, SQLite storage and data integrity.</span></p></article><article><h3><a href="jarvis-runtime.html"><span class="tr">Ajan nasıl çalışıyor?</span><span class="en">How does the agent run?</span> →</a></h3><p><span class="tr">Gateway, olaylar, R1/R2 izinleri ve R3 yürütme sınırları.</span><span class="en">Gateway, events, R1/R2 permissions and R3 execution limits.</span></p></article></div>
       </div>
     </section>
 
     <section class="next-project section-rule"><p class="section-code"><span class="tr">SONRAKİ PROJE</span><span class="en">NEXT PROJECT</span></p><a href="iron-man.html"><span><span class="tr">Iron Man Kaskı + Kolu</span><span class="en">Iron Man Helmet + Arm</span></span><b>↗</b></a></section>
   </main>
   <footer><p>© <span id="year"></span> Kuzey Mete Kardeş</p><a href="index.html">← <span class="tr">Ana sayfa</span><span class="en">Home</span></a><a href="#top"><span class="tr">Başa dön</span><span class="en">Back to top</span> ↑</a></footer>
-  <script src="script.js?v=locale-2"></script>
+  <script src="script.js?v=jarvis-3"></script>
+  <script src="progress.js?v=jarvis-3" defer></script>
 </body>
 </html>
