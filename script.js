@@ -4,7 +4,7 @@
   const supported = ["tr", "en-US", "en-GB"];
   const page = location.pathname.split("/").pop() || "index.html";
   const titles = {
-"jarvis-head.html":["JARVIS — Robotik Kafa Konsepti","JARVIS — Robotic Head Concept"],
+"jarvis-head.html":["JARVIS — İnsansı Kafa Konsepti","JARVIS — Humanoid Head Concept"],
 "jarvis-log.html":["JARVIS — Geliştirme Günlüğü","JARVIS — Build Log"],
 "jarvis-runtime.html":["JARVIS — Ajan Döngüsü ve Geliştirme Notları","JARVIS — Agent Runtime and Development Notes"],
 "jarvis-memory.html":["JARVIS — Hafıza ve Kaynaklar","JARVIS — Memory and Provenance"],
@@ -12,7 +12,7 @@
     "jarvis.html": ["JARVIS — Mimari ve Geliştirme Planı", "JARVIS — Architecture and Development Plan"],
   };
   const descriptions = {
-"jarvis-head.html":["JARVIS için fiziksel arayüz ve robotik kafa fikri: amaçlar, açık sorular ve konsept aşaması.","A physical interface and robotic head for JARVIS: goals, open questions and concept stage."],
+"jarvis-head.html":["JARVIS için fiziksel arayüz ve insansı / animatronik kafa fikri: amaçlar, açık sorular ve konsept aşaması.","A physical interface and humanoid / animatronic head for JARVIS: goals, open questions and concept stage."],
 "jarvis-log.html":["JARVIS geliştirme sürecinden tarihli durum kayıtları ve teknik kararlar.","Dated status snapshots and technical decisions from the JARVIS build."],
 "jarvis-runtime.html":["Uygulanan çekirdek bileşenler, aralarındaki veri akışı ve bugün geçerli olan sınırlar.","Implemented core components, their data flow and current operating limits."],
 "jarvis-memory.html":["Bir bilginin kendisi kadar kaynağını, kapsamını ve hangi kararın yerini aldığını koruyan hafıza katmanı.","A memory layer that preserves provenance, scope and decision history alongside information."],

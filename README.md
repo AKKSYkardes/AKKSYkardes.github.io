@@ -6,7 +6,7 @@ Türkçe ve İngilizce, çok sayfalı kişisel portföy sitesi.
 
 - `index.html` — profil, seçili çalışmalar, eğitim ve iletişim
 - `jarvis.html` — JARVIS'in problemi, mimarisi, hafıza modeli ve yol haritası
-- `jarvis-head.html` — JARVIS robotik kafa / fiziksel arayüz konsepti
+- `jarvis-head.html` — JARVIS insansı / animatronik kafa / fiziksel arayüz konsepti
 
 ## Tasarım ilkeleri
 
@@ -60,4 +60,4 @@ elle tarihli kayıt ekleyin; canlı aşama kaydı teknik yazıları otomatik de�
 uygulama değiştiğinde metinleri ayrıca güncelleyin. Canlı panel teknik metni yeniden yazmaz.
 
 
-Eski proje adresi yalnız yeni konsepte yönlendirir ve noindex içerir. Robotik kafa henüz konsepttir; canlı JARVIS yazılım aşamalarının sayısını değiştirmez.
+Eski proje adresi yalnız yeni konsepte yönlendirir ve noindex içerir. İnsansı / animatronik kafa henüz konsepttir; canlı JARVIS yazılım aşamalarının sayısını değiştirmez.
