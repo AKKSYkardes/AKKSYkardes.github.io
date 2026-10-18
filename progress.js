@@ -3,7 +3,7 @@
   const panels = [...document.querySelectorAll('[data-progress]')];
   if (!panels.length) return;
   const endpoint = 'https://api.github.com/repos/AKKSYkardes/AKKSYkardes.github.io/issues/1';
-  let snapshot, live = false, lastCheck, busy = false;
+  let snapshot, live = false, lastCheck, busy = false, checked = false;
   const english = () => document.documentElement.lang !== 'tr';
   const t = (tr, en) => english() ? en : tr;
   function parseIssue(issue) {
@@ -34,27 +34,28 @@
     panels.forEach(panel => {
       const health = panel.querySelector('[data-progress-health]');
       if (!snapshot) {
-        health.textContent = t('İlerleme verisi alınamadı. Güncel kayıt için GitHub bağlantısını aç.','Progress unavailable. Open the GitHub record for the current status.');
+        health.textContent = checked ? t('İlerleme verisi alınamadı. Güncel kayıt için GitHub bağlantısını aç.','Progress unavailable. Open the GitHub record for the current status.') : t('Güncel kayıt kontrol ediliyor…','Checking the current record…');
         return;
       }
       const {milestones} = snapshot;
       const done = milestones.filter(m => m.status === 'done').length;
       const current = milestones.find(m => m.status === 'active');
       const summary = element('div', undefined, 'progress-summary');
-      summary.append(element('strong', `${done} / ${milestones.length}`), element('span',t('aşama tamamlandı','milestones completed')),element('span',`${milestones.length-done} ${t('aşama kaldı','milestones remaining')}`));
-      const bar = element('div',undefined,'progress-bar');
+      summary.append(element('strong', `${done} ${t('aşama uygulandı','milestones implemented')}`),element('span',`${milestones.filter(m=>m.status==='active').length} ${t('aktif','active')}`),element('span',`${milestones.filter(m=>m.status==='planned').length} ${t('sonraki hedef','future goals')}`));
+      const bar = element('div',undefined,'milestone-map');
       bar.setAttribute('role','img');
-      bar.setAttribute('aria-label',t(`${milestones.length} aşamanın ${done} tanesi tamamlandı`,`${done} of ${milestones.length} milestones completed`));
-      milestones.forEach(m => {const segment=element('i',undefined,m.status); segment.setAttribute('aria-hidden','true');bar.append(segment);});
-      const active = element('p',current ? t('Şimdi: ','Now: ')+current[english()?'en':'tr'] : t('Aktif aşama belirtilmedi.','No active milestone specified.'));
+      bar.setAttribute('aria-label',t('Numaralı aşama haritası. Ayrıntılar aşağıdaki listede.','Numbered milestone map. Details are listed below.'));
+      milestones.forEach((m,i) => {const segment=element('span',String(i+1).padStart(2,'0'),m.status); segment.setAttribute('aria-hidden','true');bar.append(segment);});
+      const active = element('p',current ? t('Şimdi: ','Now: ')+current[english()?'en':'tr'] : t('Aktif aşama belirtilmedi.','No active milestone specified.'),'progress-active');
+      const legend = element('p',t('Mavi: uygulandı · Sarı: aktif çalışma · Gri: sonraki hedef','Blue: implemented · Yellow: active work · Grey: future goal'),'progress-legend');
       const list = element('ol',undefined,'progress-list');
       milestones.forEach(m => {
         const li = element('li'); li.dataset.state=m.status;
-        li.append(element('span',m[english()?'en':'tr']),element('small',m.status==='done'?t('Tamamlandı','Complete'):m.status==='active'?t('Aktif','Active'):t('Planlandı','Planned')));
+        li.append(element('span',m[english()?'en':'tr']),element('small',m.status==='done'?t('Uygulandı','Implemented'):m.status==='active'?t('Aktif','Active'):t('Hedef','Goal')));
         list.append(li);
       });
-      panel.querySelector('[data-progress-content]').replaceChildren(summary,bar,active,list);
-      health.textContent = (live ? t('GitHub ile eşitlendi. ','Synced with GitHub. ') : t('Canlı kaynağa erişilemiyor; son kayıt gösteriliyor. ','Live source unavailable; showing the last snapshot. ')) + t('Kayıt güncellemesi: ','Record updated: ')+format(snapshot.updatedAt)+' (İstanbul)'+(live && lastCheck ? ' · '+t('Son kontrol: ','Last checked: ')+format(lastCheck):'');
+      panel.querySelector('[data-progress-content]').replaceChildren(active,summary,bar,legend,list);
+      health.textContent = (!checked ? t('Güncel kayıt kontrol ediliyor… ','Checking the current record… ') : live ? t('GitHub ile eşitlendi. ','Synced with GitHub. ') : t('Canlı kaynağa erişilemiyor; son kayıt gösteriliyor. ','Live source unavailable; showing the last snapshot. ')) + t('Kayıt güncellemesi: ','Record updated: ')+format(snapshot.updatedAt)+' (İstanbul)'+(live && lastCheck ? ' · '+t('Son kontrol: ','Last checked: ')+format(lastCheck):'');
     });
   }
   async function json(url) {
@@ -69,7 +70,7 @@
       snapshot=parseIssue(await json(endpoint)); live=true; lastCheck=new Date().toISOString();
       try {localStorage.setItem('jarvis-public-progress-v1',JSON.stringify(snapshot));} catch (_) {}
     } catch (_) {live=false;}
-    finally {busy=false;render();}
+    finally {busy=false;checked=true;render();}
   }
   document.addEventListener('localechange',render);
   document.addEventListener('visibilitychange',() => {if (!document.hidden) refresh();});

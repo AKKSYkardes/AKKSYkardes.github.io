@@ -22,7 +22,8 @@ Dil seçimi tarayıcıda yerel olarak saklanır ve tüm sayfalarda korunur.
 
 ## JARVIS canlı ilerleme
 
-Ana sayfa ve JARVIS sayfası aynı `progress.js` panelini kullanır. Kaynak, bu deponun
+Ana sayfa projeleri ve kısa bir ilerleme bağlantısını öne çıkarır. JARVIS sayfası
+`progress.js` ile aşama haritasını gösterir. Kaynak, bu deponun
 [#1 ilerleme kaydı](https://github.com/AKKSYkardes/AKKSYkardes.github.io/issues/1)
 gövdesindeki `jarvis-progress:start/end` işaretleri arasındaki kontrol listesidir.
 Tamamlanan aşamayı `[x]` yapın, aktif aşamaya `<!-- active -->` ekleyin (en fazla bir tane).
@@ -34,7 +35,14 @@ Bu kayıt elle veya yetkili bir geliştirme iş akışı tarafından güncellenm
 API hatası veya kota aşımında son yerel kayıt / `progress.json` görüntülenir ve
 canlı kaynağın alınamadığı belirtilir. Tarihler İstanbul saatidir. Tarayıcıda token yoktur.
 Yeni sürümde `progress.json` kaydını da güncel tutun. Yüzde toplam ürün tamamlanması
-iddiası taşımasın diye eşit ağırlıklı tamamlanan/toplam aşama sayısı gösterilir.
+iddiası taşımaması için tamamlanma oranı gösterilmez.
+
+Panelde oran veya yüzde yerine uygulanan, aktif ve hedef aşamaların sayıları ile
+numaralı durum haritası bulunur. İlk istek tamamlanana kadar kontrol ediliyor mesajı
+gösterilir; ağ hatası yalnız başarısız bir canlı istekten sonra belirtilir.
+JARVIS örnek akışı temsili senaryodur, gerçek yürütme kaydı veya canlı demo değildir.
+Kaynak kodu özel olduğu için ziyaretçi özel depoya yönlendirilmez.
+Hypium okul takımı bağlantısı: https://teamhypium.com.tr/
 
 `jarvis-memory.html` ve `jarvis-runtime.html` tarihli teknik anlatımlardır;
 uygulama değiştiğinde metinleri ayrıca güncelleyin. Canlı panel teknik metni yeniden yazmaz.
